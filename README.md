@@ -21,8 +21,9 @@ A responsive JavaScript Todo application built with **HTML, CSS, and Vanilla Jav
 click here(https://paz0123.github.io/To-Do-List-App/)
 
 ## 📸 Screenshots
-(Add screenshots here)
+<img width="356" height="334" alt="image" src="https://github.com/user-attachments/assets/17a7e30c-b7f0-4598-aaa7-646d1521a32e" />
+
 
 ## 👤 Author
-Your Name
+Precious Azubuike Njekwe
 
