@@ -1,5 +1,5 @@
 # To-Do-List-App
-This is helps you write your list , add, delete and you can download to your phone and save for daily use 
+This Apps  helps you write or create  your list of what do , add, delete and you can download to your smartphones , laptops and computer, save it for daily use 
 # 📝 Todo App
 
 A responsive JavaScript Todo application built with **HTML, CSS, and Vanilla JavaScript**.
