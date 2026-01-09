@@ -1,0 +1,258 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE BASE */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    background: #f2f2f2;
+    line-height: 1.6;
+}
+
+/* APP CONTAINER */
+.container {
+    background-image: linear-gradient(to right, #cc99ff, #ff99ff);
+    color: #333;
+    width: 450px;
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+img{
+    width: 40px;
+    border-radius: 50px;
+    
+}
+.img{
+    display: flex;
+    justify-content: space-between;
+    gap:40px
+}
+/* HEADER */
+.todo-header {
+    background: #333;
+    color: wheat;
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.todo-header p {
+    color: aliceblue;
+    font-size: 0.9rem;
+}
+
+/* INPUT FORM */
+.input-form {
+    display: flex;
+    gap: 8px;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.add-btn {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    background: white;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #333;
+    color: white;
+}
+
+/* FILTER BUTTONS */
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.filter-btn {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #eee;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.filter-btn:hover {
+    background: #333;
+    color: white;
+}
+
+/* TODO LIST */
+.todo-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* TODO ITEM */
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.todo-text {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+/* COMPLETED STATE (JS WILL TOGGLE THIS CLASS) */
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+    background: transparent;
+    border: none;
+    color: #cc0000;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: red;
+}
+
+/* FOOTER */
+.todo-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.8rem;
+}
+
+/* CLEAR + DOWNLOAD BUTTONS */
+#clearCompletedBtn,
+#downloadPdfBtn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+}
+
+#clearCompletedBtn:hover,
+#downloadPdfBtn:hover {
+    background: black;
+}
+/* =========================
+   MOBILE RESPONSIVE STYLES
+   ========================= */
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .todo-header {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .input-form {
+        flex-direction: column;
+    }
+
+    .todo-input {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .add-btn {
+        width: 100%;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .todo-item {
+        flex-wrap: wrap;
+    }
+
+    .delete-btn {
+        margin-left: auto;
+    }
+
+    .todo-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .footer-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    #clearCompletedBtn,
+    #downloadPdfBtn {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+    }
+}

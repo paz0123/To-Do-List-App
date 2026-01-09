@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <header class="todo-header">
+            <h1>My Todo List</h1>
+            <p class="subtitle">Stay organized and productive</p>
+            
+            <div class="img">
+                <img src="image/queen.png.jpeg" alt="queen" width="">
+                <img src="image/pkaz.png.jpeg" alt="wedding" width="">
+    
+            </div>
+        </header>
+
+        <div class="input-form">
+            <input
+                type="text"
+                id="todoInput"
+                class="todo-input"
+                placeholder="Add a new task"
+                autocomplete="off"
+            >
+            <button id="addTodoBtn" class="add-btn">Add</button>
+        </div>
+
+        <div class="buttons-container">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="todoList" class="todo-list">
+            <li class="todo-item">
+                <input type="checkbox" class="todo-checkbox">
+                <span class="todo-text">Complete project documentation</span>
+                <button class="delete-btn">×</button>
+            </li>
+
+            <li class="todo-item">
+                <input type="checkbox" class="todo-checkbox" checked>
+                <span class="todo-text">Review requests</span>
+                <button class="delete-btn">×</button>
+            </li>
+
+            <li class="todo-item">
+                <input type="checkbox" class="todo-checkbox">
+                <span class="todo-text">Update team on progress</span>
+                <button class="delete-btn">×</button>
+            </li>
+        </ul>
+
+        <footer class="todo-footer">
+            <div class="footer-info">
+                <p>2 items left</p>
+                <button id="clearCompletedBtn">Clear completed</button>
+            </div>
+
+            <div class="download">
+                <button id="downloadPdfBtn">Download PDF</button>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="app.js"></script>
+</html>
